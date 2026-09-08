@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private List<Meeple> meepleInventory = new List<Meeple>();
 
     private bool isAI = false;
-    private int connectionStatus = 0; //0 = disconnected, 1 = connected, 2 = connecting;
+    private int connectionStatus = 0; //0 = disconnected, 1 = connected, 2 = connecting, 3 = waiting, 4 = ready;
 
     public void addScore(int points)
     {
@@ -48,4 +48,18 @@ public class Player : MonoBehaviour
         }
         return false;
     }
+
+    //adições do Mendes(ver com o grupo)
+
+    public int getConnectionStatus()
+    {
+        return connectionStatus;
+    }
+
+    public void setConnectionStatus(int status) //0 = disconnected, 1 = connected, 2 = connecting, 3 = waiting, 4 = ready;
+    {
+        connectionStatus = status;
+        return;
+    }
+
 }
