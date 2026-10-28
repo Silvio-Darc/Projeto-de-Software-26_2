@@ -1,0 +1,1963 @@
+fileFormatVersion: 2
+guid: 6887d9fa12ff22b4a9023055f9d3c46d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4788976544906049599
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_0"
+  - first:
+      213: -5703818451606631550
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_1"
+  - first:
+      213: -8429116701276376185
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_2"
+  - first:
+      213: 6750143057823790207
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_3"
+  - first:
+      213: 6679474748696455150
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_4"
+  - first:
+      213: 4671516661327582664
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_5"
+  - first:
+      213: 6761567661807867143
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_6"
+  - first:
+      213: -8260886382749938416
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_7"
+  - first:
+      213: 5556071708809741652
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_8"
+  - first:
+      213: 6639648521577837096
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_9"
+  - first:
+      213: 2132278624725541256
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_10"
+  - first:
+      213: 6394664258754384723
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_11"
+  - first:
+      213: 8896497710864950306
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_12"
+  - first:
+      213: -6595733918595768630
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_13"
+  - first:
+      213: -3232609283234627825
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_14"
+  - first:
+      213: -1282763914663866016
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_15"
+  - first:
+      213: -1136646202504124505
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_16"
+  - first:
+      213: -1471301487947021764
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_17"
+  - first:
+      213: -3206927145224992631
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_18"
+  - first:
+      213: 1747072193773259490
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_19"
+  - first:
+      213: -6699337739214878601
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_20"
+  - first:
+      213: 6736708471554782097
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_21"
+  - first:
+      213: -6462003079693985651
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_22"
+  - first:
+      213: 982963851463746016
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_23"
+  - first:
+      213: 962587129432251414
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_24"
+  - first:
+      213: 8206055013915959436
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_25"
+  - first:
+      213: 2143256226874330823
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_26"
+  - first:
+      213: -780154518858996978
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_27"
+  - first:
+      213: -1756246026002900897
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_28"
+  - first:
+      213: 9147173117994379611
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_29"
+  - first:
+      213: 9043877210804929023
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_30"
+  - first:
+      213: 8960663387193464267
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_31"
+  - first:
+      213: -4371903667570433760
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_32"
+  - first:
+      213: -5945984410865977392
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_33"
+  - first:
+      213: 3560405091518355480
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_34"
+  - first:
+      213: 5716783344510655177
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_35"
+  - first:
+      213: 6571551251866024915
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_36"
+  - first:
+      213: 7188690816270413109
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_37"
+  - first:
+      213: -8410194875870661129
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_38"
+  - first:
+      213: 5339185016011763434
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_39"
+  - first:
+      213: -7654279077815282964
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_40"
+  - first:
+      213: 1836119739023391532
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_41"
+  - first:
+      213: 4630262187688873696
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_42"
+  - first:
+      213: 4960036248488469059
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_43"
+  - first:
+      213: 4902794858457107233
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_44"
+  - first:
+      213: -7762192771333639495
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_45"
+  - first:
+      213: -2633578416880532138
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_46"
+  - first:
+      213: 5437291799814485970
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_47"
+  - first:
+      213: -2614644314027316579
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_48"
+  - first:
+      213: -6590256166442448747
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_49"
+  - first:
+      213: 3344320526262817311
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_50"
+  - first:
+      213: 1100429059450942345
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_51"
+  - first:
+      213: -6494215460776048641
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_52"
+  - first:
+      213: 3638203769588693688
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_53"
+  - first:
+      213: -842710904972315660
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_54"
+  - first:
+      213: -6023532226938896016
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_55"
+  - first:
+      213: -6246398340454922040
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_56"
+  - first:
+      213: -5876566203516571787
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_57"
+  - first:
+      213: -6659687792130760629
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_58"
+  - first:
+      213: 8465448473941574556
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_59"
+  - first:
+      213: -5741921843417153523
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_60"
+  - first:
+      213: 3997934883768478521
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_61"
+  - first:
+      213: 2939832511071408278
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_62"
+  - first:
+      213: -5693205495766284807
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_63"
+  - first:
+      213: -4994381620708607669
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_64"
+  - first:
+      213: 3110031980955341555
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_65"
+  - first:
+      213: 6727525231851808061
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_66"
+  - first:
+      213: -4097177727110607467
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_67"
+  - first:
+      213: 2940579720866743660
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_68"
+  - first:
+      213: 6747372287322318707
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_69"
+  - first:
+      213: -9122593098843683301
+    second: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_70"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_0"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 321
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f387dc46bccd57240800000000000000
+      internalID: 4788976544906049599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_1"
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 321
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b0ba0a657f7d0b0800000000000000
+      internalID: -5703818451606631550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_2"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 355
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783fb120503c50b80800000000000000
+      internalID: -8429116701276376185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_3"
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 321
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74f7a8e8535dad50800000000000000
+      internalID: 6750143057823790207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_4"
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 321
+        width: 16
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee76e3205e242bc50800000000000000
+      internalID: 6679474748696455150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_5"
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 321
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5dfb817af84d040800000000000000
+      internalID: 4671516661327582664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_6"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 321
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70593dec6f9e5dd50800000000000000
+      internalID: 6761567661807867143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_7"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 321
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d045a5a9f6b5d80800000000000000
+      internalID: -8260886382749938416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_8"
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 307
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455c33628c12b1d40800000000000000
+      internalID: 5556071708809741652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_9"
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 321
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822381ae625c42c50800000000000000
+      internalID: 6639648521577837096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_10"
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 321
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881ace4ac10679d10800000000000000
+      internalID: 2132278624725541256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_11"
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 321
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35311f053496eb850800000000000000
+      internalID: 6394664258754384723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_12"
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 321
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2246e294885b67b70800000000000000
+      internalID: 8896497710864950306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_13"
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 244
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace9a1d52fe3774a0800000000000000
+      internalID: -6595733918595768630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_14"
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 244
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f7b27ebf67323d0800000000000000
+      internalID: -3232609283234627825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_15"
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 278
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06155c71405b23ee0800000000000000
+      internalID: -1282763914663866016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_16"
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 244
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7e1701d42d930f0800000000000000
+      internalID: -1136646202504124505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_17"
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 244
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c320a6d8713e49be0800000000000000
+      internalID: -1471301487947021764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_18"
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 244
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9888e40a0c4be73d0800000000000000
+      internalID: -3206927145224992631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_19"
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 244
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea41d267e8de3810800000000000000
+      internalID: 1747072193773259490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_20"
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 244
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7788abf12db2703a0800000000000000
+      internalID: -6699337739214878601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_21"
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 244
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193336a89a89d7d50800000000000000
+      internalID: 6736708471554782097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_22"
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 244
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d881c59af6a5256a0800000000000000
+      internalID: -6462003079693985651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_23"
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 244
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1eb893a6034ad00800000000000000
+      internalID: 982963851463746016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_24"
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 244
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c1c2be4ebcb5d00800000000000000
+      internalID: 962587129432251414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_25"
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 244
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8026cfbe83c1e170800000000000000
+      internalID: 8206055013915959436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_26"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 167
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce0d71de206ebd10800000000000000
+      internalID: 2143256226874330823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_27"
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 199
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e036e7939955c25f0800000000000000
+      internalID: -780154518858996978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_28"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 167
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58d7e95b8f80a7e0800000000000000
+      internalID: -1756246026002900897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_29"
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 167
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59ae0dac7941fe70800000000000000
+      internalID: 9147173117994379611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_30"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 167
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1474e186e428d70800000000000000
+      internalID: 9043877210804929023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_31"
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 167
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5d38100ebaa5c70800000000000000
+      internalID: 8960663387193464267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_32"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 167
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021ac3617c0e353c0800000000000000
+      internalID: -4371903667570433760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_33"
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 167
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7b2567eae9b7da0800000000000000
+      internalID: -5945984410865977392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_34"
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 167
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81891702199196130800000000000000
+      internalID: 3560405091518355480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_35"
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 167
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca5d6bb928165f40800000000000000
+      internalID: 5716783344510655177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_36"
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 167
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db7fb6cb07d23b50800000000000000
+      internalID: 6571551251866024915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_37"
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 90
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d29e7c53c53c360800000000000000
+      internalID: 7188690816270413109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_38"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 90
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f53bebc15cf84b80800000000000000
+      internalID: -8410194875870661129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_39"
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 90
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee287ddb78981a40800000000000000
+      internalID: 5339185016011763434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_40"
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 90
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce29d1b9bb986c590800000000000000
+      internalID: -7654279077815282964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_41"
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 90
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b7299ac253b7910800000000000000
+      internalID: 1836119739023391532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_42"
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 90
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee4e127deef14040800000000000000
+      internalID: 4630262187688873696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_43"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 90
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342673840b695d440800000000000000
+      internalID: 4960036248488469059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_44"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 90
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b82f892f93a0440800000000000000
+      internalID: 4902794858457107233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_45"
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 90
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2bd82ecc6274490800000000000000
+      internalID: -7762192771333639495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_46"
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 90
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65543b51266a37bd0800000000000000
+      internalID: -2633578416880532138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_47"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 90
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7361c7514257b40800000000000000
+      internalID: 5437291799814485970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_48"
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 90
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a286079dae6bbd0800000000000000
+      internalID: -2614644314027316579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_49"
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 90
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598ce5ceee4ba84a0800000000000000
+      internalID: -6590256166442448747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_50"
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 90
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1251f6bcc9696e20800000000000000
+      internalID: 3344320526262817311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_51"
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 90
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98337153662854f00800000000000000
+      internalID: 1100429059450942345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_52"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7089d3279efd5a0800000000000000
+      internalID: -6494215460776048641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_53"
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 47
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba32da6d0f7d7230800000000000000
+      internalID: 3638203769588693688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_54"
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 13
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3f6c495e61e44f0800000000000000
+      internalID: -842710904972315660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_55"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 47
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07180388a5d186ca0800000000000000
+      internalID: -6023532226938896016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_56"
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 13
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8489fddc55059a0800000000000000
+      internalID: -6246398340454922040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_57"
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 40
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f245c5c2e327ea0800000000000000
+      internalID: -5876566203516571787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_58"
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 13
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b406a03dc390493a0800000000000000
+      internalID: -6659687792130760629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_59"
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 13
+        width: 15
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9309a109805b7570800000000000000
+      internalID: 8465448473941574556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_60"
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 13
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00801361889050b0800000000000000
+      internalID: -5741921843417153523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_61"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 13
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ba92648948b7730800000000000000
+      internalID: 3997934883768478521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_62"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 13
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6905e89c7126cc820800000000000000
+      internalID: 2939832511071408278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_63"
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 13
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f58c87f3cbadf0b0800000000000000
+      internalID: -5693205495766284807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_64"
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 13
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b497ce8906460bab0800000000000000
+      internalID: -4994381620708607669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_65"
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 13
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f292f8eb9d092b20800000000000000
+      internalID: 3110031980955341555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_66"
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 13
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35210eed88fc5d50800000000000000
+      internalID: 6727525231851808061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_67"
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 13
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d0ee1a096e327c0800000000000000
+      internalID: -4097177727110607467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_68"
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 0
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65caff1da90fc820800000000000000
+      internalID: 2940579720866743660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_69"
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 13
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3776921a85b73ad50800000000000000
+      internalID: 6747372287322318707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_70"
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 13
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b160ef009e9066180800000000000000
+      internalID: -9122593098843683301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_0": 4788976544906049599
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_1": -5703818451606631550
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_10": 2132278624725541256
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_11": 6394664258754384723
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_12": 8896497710864950306
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_13": -6595733918595768630
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_14": -3232609283234627825
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_15": -1282763914663866016
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_16": -1136646202504124505
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_17": -1471301487947021764
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_18": -3206927145224992631
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_19": 1747072193773259490
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_2": -8429116701276376185
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_20": -6699337739214878601
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_21": 6736708471554782097
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_22": -6462003079693985651
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_23": 982963851463746016
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_24": 962587129432251414
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_25": 8206055013915959436
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_26": 2143256226874330823
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_27": -780154518858996978
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_28": -1756246026002900897
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_29": 9147173117994379611
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_3": 6750143057823790207
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_30": 9043877210804929023
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_31": 8960663387193464267
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_32": -4371903667570433760
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_33": -5945984410865977392
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_34": 3560405091518355480
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_35": 5716783344510655177
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_36": 6571551251866024915
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_37": 7188690816270413109
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_38": -8410194875870661129
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_39": 5339185016011763434
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_4": 6679474748696455150
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_40": -7654279077815282964
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_41": 1836119739023391532
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_42": 4630262187688873696
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_43": 4960036248488469059
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_44": 4902794858457107233
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_45": -7762192771333639495
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_46": -2633578416880532138
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_47": 5437291799814485970
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_48": -2614644314027316579
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_49": -6590256166442448747
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_5": 4671516661327582664
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_50": 3344320526262817311
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_51": 1100429059450942345
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_52": -6494215460776048641
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_53": 3638203769588693688
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_54": -842710904972315660
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_55": -6023532226938896016
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_56": -6246398340454922040
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_57": -5876566203516571787
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_58": -6659687792130760629
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_59": 8465448473941574556
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_6": 6761567661807867143
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_60": -5741921843417153523
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_61": 3997934883768478521
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_62": 2939832511071408278
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_63": -5693205495766284807
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_64": -4994381620708607669
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_65": 3110031980955341555
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_66": 6727525231851808061
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_67": -4097177727110607467
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_68": 2940579720866743660
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_69": 6747372287322318707
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_7": -8260886382749938416
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_70": -9122593098843683301
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_8": 5556071708809741652
+      "Felipe Gualda Gabriel Baeta Jo\xE3o Mendes Marcelle Scofano Silvio D\u2019Arcangelo_9": 6639648521577837096
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
