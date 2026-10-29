@@ -43,12 +43,14 @@ public class UIManager : MonoBehaviour
     {
         if (panelStack.Count > 0)
         {
-            // Opcional: oculta ou desativa interação do painel anterior
             panelStack.Peek().Close();
         }
 
         panelStack.Push(newPanel);
         newPanel.Open();
+
+        // Chama a função para debugar a stack atualizada
+        LogStackState();
     }
 
     // Volta para a tela anterior (desempilha)
@@ -62,5 +64,22 @@ public class UIManager : MonoBehaviour
         // Reabre o painel anterior
         UIPanel previous = panelStack.Peek();
         previous.Open();
+
+        // Chama a função para debugar a stack atualizada
+        LogStackState();
+    }
+
+    private void LogStackState()
+    {
+        // this.GetInstanceID() mostra um número único para este componente. 
+        // Se esse número mudar no log, você tem dois UIManagers rodando.
+        string stackInfo = $"--- STACK [Manager ID: {this.GetEntityId()}] | Total de Painéis: {panelStack.Count} ---\n";
+
+        foreach (UIPanel painel in panelStack)
+        {
+            stackInfo += $"> {painel.gameObject.name}\n";
+        }
+
+        Debug.LogWarning(stackInfo); // Usando Warning para ficar amarelo e fácil de ver no Console
     }
 }
