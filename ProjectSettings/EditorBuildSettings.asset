@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/teste_faxas.unity
     guid: 292a23262f3375c4c8e10ab95ec13fc1
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 49ddc3714e7682f4dba4b6723569747f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
