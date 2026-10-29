@@ -37,4 +37,20 @@ public class CarcassoneTile: Tile
         default: return this.bordaCima;
         }
     }
+
+    public CarcassoneTile GetTile()
+    {
+        CarcassoneTile clone = ScriptableObject.CreateInstance<CarcassoneTile>();
+        clone.nomeDaPeca = this.nomeDaPeca;
+        clone.temEscudo = this.temEscudo;
+        clone.temMosteiro = this.temMosteiro;
+        clone.temMeeple = this.temMeeple;
+        clone.rotation = this.rotation;
+        clone.bordaCima = this.bordaCima;
+        clone.bordaDireita = this.bordaDireita;
+        clone.bordaBaixo = this.bordaBaixo;
+        clone.bordaEsquerda = this.bordaEsquerda;
+
+        return clone;
+    }
 }

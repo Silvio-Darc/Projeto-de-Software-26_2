@@ -37,8 +37,9 @@ MonoBehaviour:
   nomeDaPeca: 
   temEscudo: 0
   temMosteiro: 0
+  temMeeple: 0
   rotation: 0
   bordaCima: 2
   bordaDireita: 2
-  bordaBaixo: 2
-  bordaEsquerda: 1
+  bordaBaixo: 1
+  bordaEsquerda: 2
