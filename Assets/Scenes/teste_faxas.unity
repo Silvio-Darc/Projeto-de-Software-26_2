@@ -787,6 +787,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7d27ca47effcb1a46b5878314ee884df, type: 2}
   - {fileID: 11400000, guid: 744f02e4860ccc54286ac6c16ba593a4, type: 2}
   - {fileID: 11400000, guid: 129c1d09f859601428f56a998eb861a6, type: 2}
+  Baralho: []
   currentTile: {fileID: 0}
   image: {fileID: 875031841}
   inputs: {fileID: -944628639613478452, guid: 7695e55fb6475a14997b3ae0a285bfb2, type: 3}
@@ -958,11 +959,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6386107439368890642, guid: b5594ea92d7c608459fbca0c35f48dcb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -48.09645
+      value: -49.09645
       objectReference: {fileID: 0}
     - target: {fileID: 6587487955033909838, guid: b5594ea92d7c608459fbca0c35f48dcb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7
+      value: 491
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587487955033909838, guid: b5594ea92d7c608459fbca0c35f48dcb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -231
       objectReference: {fileID: 0}
     - target: {fileID: 8123138667000576853, guid: b5594ea92d7c608459fbca0c35f48dcb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

@@ -37,6 +37,8 @@ MonoBehaviour:
   nomeDaPeca: Estrada em L
   temEscudo: 0
   temMosteiro: 0
+  temMeeple: 0
+  rotation: 0
   bordaCima: 0
   bordaDireita: 0
   bordaBaixo: 1

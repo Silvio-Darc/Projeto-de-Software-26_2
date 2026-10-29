@@ -35,11 +35,11 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   nomeDaPeca: 
-  temEscudo: 0
+  temEscudo: 1
   temMosteiro: 0
   temMeeple: 0
   rotation: 0
   bordaCima: 2
   bordaDireita: 2
-  bordaBaixo: 0
+  bordaBaixo: 1
   bordaEsquerda: 2

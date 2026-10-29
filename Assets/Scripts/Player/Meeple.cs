@@ -4,9 +4,9 @@ using UnityEngine;
 public class Meeple : MonoBehaviour
 {
     public Player owner;
-    private string id;
-    private int type = 0; //0 = available, 1 = farm, 2 = road, 3 = city, 4 = monastery
-    private int value = 0;
+    [SerializeField]private string id;
+    [SerializeField]private int type = 0; //0 = available, 1 = farm, 2 = road, 3 = city, 4 = monastery
+    [SerializeField]private int value = 0;
     
     public int getValue()
     {

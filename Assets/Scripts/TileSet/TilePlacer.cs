@@ -27,6 +27,11 @@ public class TilePlacer : MonoBehaviour
     private int currentRotationZ = 0;
 
     private Vector3Int lastPlacedPos = Vector3Int.zero;
+    private Vector3Int lastPlacedTile = Vector3Int.zero;
+
+    // Flags que indicam se a rede conectada ao tile recém-colocado já possui meeple
+    private bool lastTileEstradaOcupada = false;
+    private bool lastTileCidadeOcupada = false;
 
     public InputActionAsset inputs;
 
@@ -131,7 +136,7 @@ public class TilePlacer : MonoBehaviour
             int randomIndex = Random.Range(0, Baralho.Count);
             currentTile = Baralho[randomIndex];
             Baralho.RemoveAt(randomIndex); // Remove o tile sorteado do baralho para não repetir
-            
+
             // Cria um pacote vazio de dados de tile
             TileData tileData = new TileData();
 
@@ -205,16 +210,45 @@ public class TilePlacer : MonoBehaviour
 
         if (board.IsValidPlacement(currentTile, cellPosition, currentRotationZ))
         {
-            tilemap.SetTile(cellPosition, currentTile);
+            CarcassoneTile tileInstance = Instantiate(currentTile);
+            tileInstance.temMeeple = false;
+            tileInstance.temMeepleEstrada = false;
+            tileInstance.temMeepleCidade = false;
+
+            // 1. PRIMEIRO: Coloca a peça no tabuleiro e registra na lista
+            tilemap.SetTile(cellPosition, tileInstance);
             Matrix4x4 matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(0, 0, currentRotationZ*-90), Vector3.one);
             tilemap.SetTransformMatrix(cellPosition, matrix);
             board.addCellToPlacedCells(cellPosition, currentRotationZ);
+
+            // 2. DEPOIS: Verifica se conectou a redes que já possuem meeple
+            //    (agora a peça já existe no tabuleiro, então a busca BFS funciona!)
+            lastTileEstradaOcupada = board.RedeJaPossuiMeeple(cellPosition, TipoTerreno.Estrada);
+            lastTileCidadeOcupada = board.RedeJaPossuiMeeple(cellPosition, TipoTerreno.Cidade);
+
+            if (lastTileEstradaOcupada)
+            {
+                tileInstance.temMeepleEstrada = true;
+                Debug.Log("Conectado a uma estrada que já possui Meeple!");
+            }
+            if (lastTileCidadeOcupada)
+            {
+                tileInstance.temMeepleCidade = true;
+                Debug.Log("Conectado a uma cidade que já possui Meeple!");
+            }
             
             currentRotationZ = 0;
             image.transform.rotation = Quaternion.Euler(0, 0, 0);
             PickRandomTile();
 
             lastPlacedPos = cellPosition;
+            lastPlacedTile = cellPosition;
+
+            // Abre o popup para o jogador escolher se quer colocar meeple
+            if (popupMeeple != null)
+            {
+                popupMeeple.SetActive(true);
+            }
             FinishAction();
         }
         
@@ -233,42 +267,103 @@ public class TilePlacer : MonoBehaviour
             return;
         }
 
-        Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
         if(!carcassoneTile.temMeeple)
         {
             popupMeeple.SetActive(true);
-            popupMeeple.transform.position = mouseScreenPosition - new Vector2 (0, 10);
         }
         Debug.Log("Tile inspecionado: " + carcassoneTile.name);
     }
     
     public void TryPlaceMeeple()
     {
+        // 1. Verifica se o TurnManager e o Jogador existem
+        if (Turn.Instance == null)
+        {
+            Debug.LogError("[Falha Meeple] Turn.Instance é nulo! O script Turn está na cena?");
+            return;
+        }
         Player current = Turn.Instance.GetCurrentPlayer();
-        if (current != null && current.hasAvailableMeeple())
+        if (current == null)
         {
-            // Aqui entra sua lógica de instanciar o meeple sobre a 'lastPlacedCell'
-            Debug.Log($"Meeple posicionado pelo {current.GetPlayerName()}!");
-            // Pega o tile que foi colocado neste turno:
-            TileBase tileBase = tilemap.GetTile(lastPlacedPos);
-            if (tileBase is CarcassoneTile placedTile)
-            {
-                placedTile.temMeeple = true;
-            }
-            current.getAvailableMeeple().setType(1); // alterar dps   
-            
-            Vector3Int cellPosition = lastPlacedPos;
-            tilemap.SetTileFlags(cellPosition, TileFlags.None); // Permite alterar a cor do tile
-            tilemap.SetColor(cellPosition, Color.Lerp(current.GetPlayerColor(), Color.white, 0.5f));
+            Debug.LogError("[Falha Meeple] Nenhum jogador atual encontrado! A lista de jogadores no Turn está vazia.");
+            return;
+        }
+        // 2. Verifica se o jogador realmente tem meeples no inventário
+        if (!current.hasAvailableMeeple())
+        {
+            Debug.LogWarning($"[Falha Meeple] {current.GetPlayerName()} realmente não possui meeples disponíveis!");
+            return;
+        }
+        // 3. Verifica se a célula do tile colocado é válida
+        TileBase tileBase = tilemap.GetTile(lastPlacedTile);
+        if (tileBase == null)
+        {
+            Debug.LogError($"[Falha Meeple] Nenhum tile encontrado na posição gravada: {lastPlacedTile}");
+            return;
+        }
+        if (!(tileBase is CarcassoneTile carcassoneTile))
+        {
+            Debug.LogError($"[Falha Meeple] O tile em {lastPlacedTile} não é um CarcassoneTile!");
+            return;
+        }
+        // 4. Verifica se o tile já tinha meeple
+        if (carcassoneTile.temMeeple)
+        {
+            Debug.LogWarning($"[Falha Meeple] O tile em {lastPlacedTile} ({carcassoneTile.name}) já possui meeple!");
+            return;
+        }
 
-            // Finaliza o turno após colocar o meeple
-            SkipOrFinishMeeplePhase();
-        }
-        else
+        // 5. REGRA DO CARCASSONNE: Verifica se a rede conectada já possui meeple
+        //    Usa as flags calculadas em PlaceTile() E refaz a checagem em tempo real
+        bool estradaOcupada = lastTileEstradaOcupada || board.RedeJaPossuiMeeple(lastPlacedTile, TipoTerreno.Estrada);
+        bool cidadeOcupada = lastTileCidadeOcupada || board.RedeJaPossuiMeeple(lastPlacedTile, TipoTerreno.Cidade);
+
+        // Verifica se TODAS as opções de terreno deste tile estão bloqueadas
+        bool temEstrada = carcassoneTile.bordaCima == TipoTerreno.Estrada ||
+                          carcassoneTile.bordaDireita == TipoTerreno.Estrada ||
+                          carcassoneTile.bordaBaixo == TipoTerreno.Estrada ||
+                          carcassoneTile.bordaEsquerda == TipoTerreno.Estrada;
+
+        bool temCidade = carcassoneTile.bordaCima == TipoTerreno.Cidade ||
+                         carcassoneTile.bordaDireita == TipoTerreno.Cidade ||
+                         carcassoneTile.bordaBaixo == TipoTerreno.Cidade ||
+                         carcassoneTile.bordaEsquerda == TipoTerreno.Cidade;
+
+        // Se a peça tem estrada e a estrada está ocupada, E a peça tem cidade e a cidade está ocupada
+        // OU a peça só tem estrada e ela está ocupada, OU a peça só tem cidade e ela está ocupada
+        bool bloqueado = true;
+        if (temEstrada && !estradaOcupada) bloqueado = false;
+        if (temCidade && !cidadeOcupada) bloqueado = false;
+        if (!temEstrada && !temCidade) bloqueado = false; // Tile só de campo
+
+        if (bloqueado)
         {
-            Debug.Log("Jogador não possui meeples disponíveis!");
+            Debug.LogWarning("[Regra Carcassonne] Todos os terrenos deste tile já possuem Meeple na rede! Não é permitido colocar outro.");
+            if (popupMeeple != null) popupMeeple.SetActive(false);
+            SkipOrFinishMeeplePhase();
+            return;
         }
+
+
+        Debug.Log($"Sucesso: Meeple posicionado pelo {current.GetPlayerName()}!");
+        
+        carcassoneTile.temMeeple = true;
+        carcassoneTile.temMeepleEstrada = true;
+        carcassoneTile.temMeepleCidade = true;
+
+        Meeple meeple = current.getAvailableMeeple();
+        if (meeple != null)
+        {
+            meeple.setType(1); // Marca o meeple como ocupado
+        }
+        // Pinta o tile com a cor do jogador
+        tilemap.SetTileFlags(lastPlacedTile, TileFlags.None);
+        tilemap.SetColor(lastPlacedTile, Color.Lerp(current.GetPlayerColor(), Color.white, 0.5f));
+        if (popupMeeple != null) popupMeeple.SetActive(false);
+        // Finaliza o turno e vai para o próximo jogador
+        SkipOrFinishMeeplePhase();
     }
+
     // Chame essa função pelo clique de um Botão UI "Pular Meeple" ou tecla Espaço
     public void SkipOrFinishMeeplePhase()
     {
@@ -287,9 +382,11 @@ public class TilePlacer : MonoBehaviour
         if (Turn.Instance.CurrentPhase == Turn.TurnPhase.PosicionarTile)
         {
             Turn.Instance.SetPhase(Turn.TurnPhase.PosicionarMeeple);
+            //isMeepling = true;
         }
         else
         {
+            //isMeepling = false;
             Turn.Instance.EndTurn();
         }
     }
@@ -322,12 +419,6 @@ public class TilePlacer : MonoBehaviour
         {
             PlaceTile();
         }
-        // Se a fase for de colocar Meeple:
-        else if (Turn.Instance.CurrentPhase == Turn.TurnPhase.PosicionarMeeple && GameObject.Find("Confirma(Clone)") == null)
-        {
-            InspectTile();
-        }
-
     }
     
     
