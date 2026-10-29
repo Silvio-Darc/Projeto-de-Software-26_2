@@ -626,6 +626,11 @@ MonoBehaviour:
   addButtonsContainer: {fileID: 1429131324}
   activePlayers:
   - {fileID: 1213034699}
+  avaibleColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.1990477, g: 0.6698113, b: 0.22507355, a: 1}
+  - {r: 1, g: 0.7866268, b: 0.2971698, a: 1}
+  - {r: 0.14640439, g: 0.2080051, b: 0.8867924, a: 1}
 --- !u!225 &1088838204
 CanvasGroup:
   m_ObjectHideFlags: 0
