@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "Teclado",
+    "maps": [
+        {
+            "name": "Teclado",
+            "id": "e5dcd558-61f2-4670-b24f-792796885430",
+            "actions": [
+                {
+                    "name": "E",
+                    "type": "Button",
+                    "id": "0a2aecdf-4c5b-47d4-aec4-111ee6adff93",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Q",
+                    "type": "Button",
+                    "id": "53c96253-814f-47fd-bcbc-67a16fb8cf94",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a9184417-9d82-4ad2-b3af-346aa4b3ee88",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "E",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e27075a4-b999-47c4-91ff-0eac0df9792e",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Q",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
