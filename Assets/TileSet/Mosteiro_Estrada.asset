@@ -40,5 +40,5 @@ MonoBehaviour:
   rotation: 0
   bordaCima: 0
   bordaDireita: 0
-  bordaBaixo: 0
+  bordaBaixo: 1
   bordaEsquerda: 0
