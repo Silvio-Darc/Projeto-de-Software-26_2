@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
-    private string id;
-    private string name;
-    private Color playerColor;
-    private int score = 0;
+    [SerializeField]private string id;
+    [SerializeField]private string name;
+    [SerializeField]private Color playerColor;
+    [SerializeField]private int score = 0;
 
-    private List<Meeple> meepleInventory = new List<Meeple>();
+    [SerializeField]private List<Meeple> meepleInventory = new List<Meeple>();
 
-    private bool isAI = false;
-    private int connectionStatus = 0; //0 = disconnected, 1 = connected, 2 = connecting, 3 = waiting, 4 = ready;
+    [SerializeField]private bool isAI = false;
+    [SerializeField]private int connectionStatus = 0; //0 = disconnected, 1 = connected, 2 = connecting, 3 = waiting, 4 = ready;
 
     public void Initialize(string playerId, string playerName, Color color)
     {

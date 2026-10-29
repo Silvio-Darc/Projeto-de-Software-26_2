@@ -12,7 +12,9 @@ public class CarcassoneTile: Tile
     public string nomeDaPeca;
     public bool temEscudo; // Aqueles escudos que dão pontos extras na cidade
     public bool temMosteiro;
-    public bool temMeeple; 
+    public bool temMeeple = false; 
+    public bool temMeepleEstrada = false;
+    public bool temMeepleCidade = false;
     public int rotation = 0;
 
     [Header("Bordas (Sentido Horário)")]
@@ -36,5 +38,21 @@ public class CarcassoneTile: Tile
         case 3: return this.bordaEsquerda;
         default: return this.bordaCima;
         }
+    }
+
+    public CarcassoneTile GetTile()
+    {
+        CarcassoneTile clone = ScriptableObject.CreateInstance<CarcassoneTile>();
+        clone.nomeDaPeca = this.nomeDaPeca;
+        clone.temEscudo = this.temEscudo;
+        clone.temMosteiro = this.temMosteiro;
+        clone.temMeeple = this.temMeeple;
+        clone.rotation = this.rotation;
+        clone.bordaCima = this.bordaCima;
+        clone.bordaDireita = this.bordaDireita;
+        clone.bordaBaixo = this.bordaBaixo;
+        clone.bordaEsquerda = this.bordaEsquerda;
+
+        return clone;
     }
 }

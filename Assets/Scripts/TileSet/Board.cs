@@ -15,19 +15,11 @@ public class Board : MonoBehaviour
     //posição e rotação do tile
     private List<(Vector3Int, int)> placedCells = new List<(Vector3Int, int)>();
 
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         addCellToPlacedCells(Vector3Int.zero, 0);
         updateEdges();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     // Método para atualizar os edges do mapa
@@ -125,4 +117,78 @@ public class Board : MonoBehaviour
         //foreach ((Vector3Int, int) v in placedCells) Debug.Log(v);
         updateEdges();
     }
+
+    public int GetRotationAt(Vector3Int cellPosition)
+    {
+        int index = placedCells.FindIndex(c => c.Item1 == cellPosition);
+        if (index != -1)
+        {
+            return placedCells[index].Item2;
+        }
+        return 0;
+    }
+    private readonly Vector3Int[] vizinhosDirs = new Vector3Int[]
+    {
+        new Vector3Int(0, 1, 0),  // Cima (0)
+        new Vector3Int(1, 0, 0),  // Direita (1)
+        new Vector3Int(0, -1, 0), // Baixo (2)
+        new Vector3Int(-1, 0, 0)  // Esquerda (3)
+    };
+    // Bordas opostas: Cima <-> Baixo, Direita <-> Esquerda
+    private readonly Borda[] bordasOpostas = new Borda[]
+    {
+        Borda.Baixo,   // Oposta a Cima
+        Borda.Esquerda,// Oposta a Direita
+        Borda.Cima,    // Oposta a Baixo
+        Borda.Direita  // Oposta a Esquerda
+    };
+    /// <summary>
+    /// Percorre toda a rede conectada de um terreno (Estrada ou Cidade)
+    /// e retorna 'true' se encontrar algum Meeple já posicionado nela.
+    /// </summary>
+    public bool RedeJaPossuiMeeple(Vector3Int startPos, TipoTerreno tipoProcurado)
+    {
+        Queue<Vector3Int> fila = new Queue<Vector3Int>();
+        HashSet<Vector3Int> visitados = new HashSet<Vector3Int>();
+        fila.Enqueue(startPos);
+        visitados.Add(startPos);
+        while (fila.Count > 0)
+        {
+            Vector3Int atualPos = fila.Dequeue();
+            int rotAtual = GetRotationAt(atualPos);
+            CarcassoneTile tileAtual = tilemap.GetTile<CarcassoneTile>(atualPos);
+            if (tileAtual == null) continue;
+            // Se encontrou um tile nesta rede que tem meeple (ignorando a peça que acabou de ser colocada na startPos)
+            if (atualPos != startPos)
+            {
+                if (tipoProcurado == TipoTerreno.Estrada && (tileAtual.temMeepleEstrada || tileAtual.temMeeple)) return true;
+                if (tipoProcurado == TipoTerreno.Cidade && (tileAtual.temMeepleCidade || tileAtual.temMeeple)) return true;
+                
+                // Caso esteja usando o temMeeple comum:
+                // if (tileAtual.temMeeple) return true;
+            }
+            // Checa os 4 vizinhos conectados
+            for (int i = 0; i < 4; i++)
+            {
+                Borda bordaAtual = (Borda)i;
+                // Se a borda atual não for do terreno procurado, pula
+                if (tileAtual.obterBordaReal(bordaAtual, rotAtual) != tipoProcurado) continue;
+                Vector3Int vizinhoPos = atualPos + vizinhosDirs[i];
+                if (visitados.Contains(vizinhoPos)) continue;
+                if (tilemap.HasTile(vizinhoPos) && tilemap.GetTile(vizinhoPos) is CarcassoneTile tileVizinho)
+                {
+                    int rotVizinho = GetRotationAt(vizinhoPos);
+                    Borda bordaConexaoVizinho = bordasOpostas[i];
+                    // Verifica se a borda do vizinho também conecta com o mesmo tipo de terreno
+                    if (tileVizinho.obterBordaReal(bordaConexaoVizinho, rotVizinho) == tipoProcurado)
+                    {
+                        visitados.Add(vizinhoPos);
+                        fila.Enqueue(vizinhoPos);
+                    }
+                }
+            }
+        }
+        return false; // Nenhuma peça da rede conectada possui meeple
+    }
+
 }

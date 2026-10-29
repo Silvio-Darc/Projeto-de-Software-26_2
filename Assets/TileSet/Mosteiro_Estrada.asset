@@ -37,6 +37,7 @@ MonoBehaviour:
   nomeDaPeca: Mosteiro_Estrada
   temEscudo: 0
   temMosteiro: 1
+  temMeeple: 0
   rotation: 0
   bordaCima: 0
   bordaDireita: 0
