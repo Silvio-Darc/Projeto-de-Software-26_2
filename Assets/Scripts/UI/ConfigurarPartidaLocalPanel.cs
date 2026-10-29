@@ -11,6 +11,8 @@ public class ConfigurarPartidaLocalPanel : UIPanel
     private const int MinPlayers = 1;
     public List<UIPlayer> activePlayers = new List<UIPlayer>();
     public static ConfigurarPartidaLocalPanel Instance { get; private set; }
+    public List<Color> avaibleColors = new List<Color>();
+
     protected override void Awake()
     {
         base.Awake();
@@ -39,6 +41,7 @@ public class ConfigurarPartidaLocalPanel : UIPanel
     {
         if (activePlayers.Count > MinPlayers && activePlayers.Contains(playerToRemove))
         {
+            ConfigurarPartidaLocalPanel.Instance.avaibleColors.Add(playerToRemove.playerColor);
             activePlayers.Remove(playerToRemove);
             Destroy(playerToRemove.gameObject);
             UpdateAddButtonsState();

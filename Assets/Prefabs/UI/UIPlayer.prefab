@@ -427,7 +427,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIPlayer
   playername: 
+  playerColor: {r: 0, g: 0, b: 0, a: 0}
   isBot: 0
+  image: {fileID: 342653952048049132}
   inputField: {fileID: 5293538332129982120}
 --- !u!1 &6225419215686084050
 GameObject:
