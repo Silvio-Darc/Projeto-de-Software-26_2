@@ -35,11 +35,34 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   nomeDaPeca: Mosteiro_Estrada
+  quantidadeNoBaralho: 2
+  ehPecaInicial: 0
   temEscudo: 0
   temMosteiro: 1
   temMeeple: 0
+  temMeepleEstrada: 0
+  temMeepleCidade: 0
   rotation: 0
   bordaCima: 0
   bordaDireita: 0
   bordaBaixo: 1
   bordaEsquerda: 0
+  features:
+  - localFeatureId: 0
+    label: Mosteiro
+    featureType: 3
+    connectedPorts: 
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0, y: 0.05}
+  - localFeatureId: 1
+    label: Estrada do Mosteiro
+    featureType: 1
+    connectedPorts: 07000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0, y: -0.34}
+  - localFeatureId: 2
+    label: Campo do Mosteiro
+    featureType: 0
+    connectedPorts: 0000000001000000020000000300000004000000050000000600000008000000090000000a0000000b000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: -0.3, y: 0.25}

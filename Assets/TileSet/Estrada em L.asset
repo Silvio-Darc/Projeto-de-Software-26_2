@@ -35,11 +35,34 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   nomeDaPeca: Estrada em L
+  quantidadeNoBaralho: 9
+  ehPecaInicial: 0
   temEscudo: 0
   temMosteiro: 0
   temMeeple: 0
+  temMeepleEstrada: 0
+  temMeepleCidade: 0
   rotation: 0
   bordaCima: 0
   bordaDireita: 0
   bordaBaixo: 1
   bordaEsquerda: 1
+  features:
+  - localFeatureId: 0
+    label: Estrada em Curva
+    featureType: 1
+    connectedPorts: 070000000a000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: -0.12, y: -0.12}
+  - localFeatureId: 1
+    label: Campo Externo Nordeste
+    featureType: 0
+    connectedPorts: 000000000100000002000000030000000400000005000000060000000b000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0.18, y: 0.18}
+  - localFeatureId: 2
+    label: Campo Interno Sudoeste
+    featureType: 0
+    connectedPorts: 0800000009000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: -0.33, y: -0.33}

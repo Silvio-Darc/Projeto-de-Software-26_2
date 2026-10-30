@@ -34,11 +34,29 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  nomeDaPeca: 
+  nomeDaPeca: Mosteiro_Sem_Estrada
+  quantidadeNoBaralho: 4
+  ehPecaInicial: 0
   temEscudo: 0
   temMosteiro: 1
+  temMeeple: 0
+  temMeepleEstrada: 0
+  temMeepleCidade: 0
   rotation: 0
   bordaCima: 0
   bordaDireita: 0
   bordaBaixo: 0
   bordaEsquerda: 0
+  features:
+  - localFeatureId: 0
+    label: Mosteiro
+    featureType: 3
+    connectedPorts: 
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0, y: 0.05}
+  - localFeatureId: 1
+    label: Campo do Mosteiro
+    featureType: 0
+    connectedPorts: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: -0.3, y: -0.25}

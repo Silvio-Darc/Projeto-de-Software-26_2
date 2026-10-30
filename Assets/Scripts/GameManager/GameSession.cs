@@ -1,47 +1,54 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class GameSession: MonoBehaviour
+/// <summary>
+/// Gerencia a sessão da partida local, delegando a criação dos jogadores para PlayerFactory (GoF Factory Method)
+/// e inicializando o controlador de turnos (Turn) e o placar (UIPlayerScoreboard).
+/// </summary>
+public class GameSession : MonoBehaviour
 {
     [Header("Prefab & Configurações")]
-    [SerializeField] private GameObject playerPrefab; // Prefab do Player com Player.cs anexado
+    [SerializeField] private GameObject playerPrefab;
     [SerializeField] private Turn turnManager;
-    // Cores padrão para diferenciar os 4 jogadores (Carcassonne)
-    private readonly Color[] defaultColors = new Color[]
-    {
-        Color.red,      // Jogador 1: Vermelho
-        Color.blue,     // Jogador 2: Azul
-        Color.green,    // Jogador 3: Verde
-        Color.yellow    // Jogador 4: Amarelo
-    };
+
     private List<Player> activePlayers = new List<Player>();
+
+    public IReadOnlyList<Player> ActivePlayers => activePlayers;
+
     private void Start()
     {
         SetupPlayers(GameConfig.SelectedPlayerCount);
     }
-    private void SetupPlayers(int count)
+
+    private void SetupPlayers(int fallbackCount)
     {
-        activePlayers.Clear();
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < activePlayers.Count; i++)
         {
-            // 1. Instancia o GameObject do jogador
-            
-            GameObject playerObj = Instantiate(playerPrefab, gameObject.transform);
-            playerObj.name = $"Player_{i + 1}";
-            // 2. Configura os dados do Player
-            Player player = playerObj.GetComponent<Player>();
-            player.Initialize(
-                playerId: $"p{i + 1}",
-                playerName: $"Jogador {i + 1}",
-                color: defaultColors[i]
-            );
-            activePlayers.Add(player);
+            if (activePlayers[i] != null)
+            {
+                Destroy(activePlayers[i].gameObject);
+            }
         }
-        // 3. Entrega os jogadores instanciados ao Turn Manager
+        activePlayers.Clear();
+
+        // 1. Cria os jogadores (Humanos e Bots) via PlayerFactory
+        activePlayers = PlayerFactory.CreatePlayers(transform, playerPrefab, fallbackCount);
+
+        // 2. Garante que o HUD / Placar esteja presente e observando os jogadores
+        UIPlayerScoreboard scoreboard = FindFirstObjectByType<UIPlayerScoreboard>();
+        if (scoreboard == null)
+        {
+            GameObject hudObj = new GameObject("PlayerScoreboardHUD");
+            scoreboard = hudObj.AddComponent<UIPlayerScoreboard>();
+        }
+        scoreboard.InitializeScoreboard(activePlayers);
+
+        // 3. Inicia a partida no TurnManager
         if (turnManager == null)
         {
-            turnManager = Turn.Instance;
+            turnManager = Turn.Instance != null ? Turn.Instance : FindFirstObjectByType<Turn>();
         }
+
         if (turnManager != null)
         {
             turnManager.StartGame(activePlayers);

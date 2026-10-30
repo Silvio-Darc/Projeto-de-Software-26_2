@@ -34,12 +34,41 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 1
-  nomeDaPeca: 
+  nomeDaPeca: Cidade_Cima_Esq_Dir_Estrada_Escudo
+  quantidadeNoBaralho: 2
+  ehPecaInicial: 0
   temEscudo: 1
   temMosteiro: 0
   temMeeple: 0
+  temMeepleEstrada: 0
+  temMeepleCidade: 0
   rotation: 0
   bordaCima: 2
   bordaDireita: 2
   bordaBaixo: 1
   bordaEsquerda: 2
+  features:
+  - localFeatureId: 0
+    label: Cidade Grande
+    featureType: 2
+    connectedPorts: 000000000100000002000000030000000400000005000000090000000a0000000b000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0, y: 0.18}
+  - localFeatureId: 1
+    label: "Estrada do Port\xE3o"
+    featureType: 1
+    connectedPorts: 07000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0, y: -0.32}
+  - localFeatureId: 2
+    label: Campo Sudeste
+    featureType: 0
+    connectedPorts: 06000000
+    adjacentCityFeatureIds: 00000000
+    pinLocalOffset: {x: 0.25, y: -0.35}
+  - localFeatureId: 3
+    label: Campo Sudoeste
+    featureType: 0
+    connectedPorts: 08000000
+    adjacentCityFeatureIds: 00000000
+    pinLocalOffset: {x: -0.25, y: -0.35}

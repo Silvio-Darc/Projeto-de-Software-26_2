@@ -1,30 +1,67 @@
 using UnityEngine;
 
-
+/// <summary>
+/// Representa um seguidor (Meeple) pertencente a um jogador.
+/// Aplica encapsulamento e tipagem forte (MeepleRole).
+/// </summary>
 public class Meeple : MonoBehaviour
 {
-    public Player owner;
-    [SerializeField]private string id;
-    [SerializeField]private int type = 0; //0 = available, 1 = farm, 2 = road, 3 = city, 4 = monastery
-    [SerializeField]private int value = 0;
-    
-    public int getValue()
+    [SerializeField] private Player owner;
+    [SerializeField] private string id;
+    [SerializeField] private int type = (int)MeepleRole.Disponivel;
+    [SerializeField] private int value = 1;
+    [SerializeField] private Vector3Int placedBoardPosition;
+    [SerializeField] private int placedFeatureId = -1;
+
+    public Player Owner
     {
-        return value;
+        get => owner;
+        set => owner = value;
     }
 
-    public Player getOwner()
+    public string Id
     {
-        return owner;
+        get => id;
+        set => id = value;
     }
 
-    public int getType() //0 = available, 1 = farm, 2 = road, 3 = city, 4 = monastery
+    public MeepleRole Role
     {
-        return type;
+        get => (MeepleRole)type;
+        set => type = (int)value;
     }
 
-    public void setType(int newType) //0 = available, 1 = farm, 2 = road, 3 = city, 4 = monastery
+    public int Value => value;
+    public bool IsAvailable => Role == MeepleRole.Disponivel;
+    public Vector3Int PlacedBoardPosition => placedBoardPosition;
+    public int PlacedFeatureId => placedFeatureId;
+
+    public void Initialize(Player meepleOwner, string meepleId)
     {
-        type = newType;
+        owner = meepleOwner;
+        id = meepleId;
+        Role = MeepleRole.Disponivel;
+        placedBoardPosition = Vector3Int.zero;
+        placedFeatureId = -1;
     }
+
+    public void AssignToFeature(Vector3Int boardPosition, int featureId, MeepleRole role)
+    {
+        placedBoardPosition = boardPosition;
+        placedFeatureId = featureId;
+        Role = role;
+    }
+
+    public void Release()
+    {
+        Role = MeepleRole.Disponivel;
+        placedBoardPosition = Vector3Int.zero;
+        placedFeatureId = -1;
+    }
+
+    // Métodos de compatibilidade com código legado
+    public int getValue() => Value;
+    public Player getOwner() => Owner;
+    public int getType() => type;
+    public void setType(int newType) => type = newType;
 }

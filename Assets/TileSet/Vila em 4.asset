@@ -35,11 +35,64 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   nomeDaPeca: Vila em 4
+  quantidadeNoBaralho: 1
+  ehPecaInicial: 0
   temEscudo: 0
   temMosteiro: 0
   temMeeple: 0
+  temMeepleEstrada: 0
+  temMeepleCidade: 0
   rotation: 0
   bordaCima: 1
   bordaDireita: 1
   bordaBaixo: 1
   bordaEsquerda: 1
+  features:
+  - localFeatureId: 0
+    label: Estrada Norte
+    featureType: 1
+    connectedPorts: 01000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0, y: 0.35}
+  - localFeatureId: 1
+    label: Estrada Leste
+    featureType: 1
+    connectedPorts: 04000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0.35, y: 0}
+  - localFeatureId: 2
+    label: Estrada Sul
+    featureType: 1
+    connectedPorts: 07000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0, y: -0.35}
+  - localFeatureId: 3
+    label: Estrada Oeste
+    featureType: 1
+    connectedPorts: 0a000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: -0.35, y: 0}
+  - localFeatureId: 4
+    label: Campo Nordeste
+    featureType: 0
+    connectedPorts: 0200000003000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0.28, y: 0.28}
+  - localFeatureId: 5
+    label: Campo Sudeste
+    featureType: 0
+    connectedPorts: 0500000006000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: 0.28, y: -0.28}
+  - localFeatureId: 6
+    label: Campo Sudoeste
+    featureType: 0
+    connectedPorts: 0800000009000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: -0.28, y: -0.28}
+  - localFeatureId: 7
+    label: Campo Noroeste
+    featureType: 0
+    connectedPorts: 000000000b000000
+    adjacentCityFeatureIds: 
+    pinLocalOffset: {x: -0.28, y: 0.28}

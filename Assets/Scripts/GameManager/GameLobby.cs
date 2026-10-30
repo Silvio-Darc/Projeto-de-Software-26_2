@@ -1,40 +1,63 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class GameLobby : MonoBehaviour
 {
-    private string lobbyCode;
-    private Player host;
-    private List<Player> connectedPlayers = new List<Player>();
-    private int maxPlayers;
-    private bool isPrivate;
+    [SerializeField] private string lobbyCode;
+    [SerializeField] private Player host;
+    [SerializeField] private List<Player> connectedPlayers = new List<Player>();
+    [SerializeField] private int maxPlayers = 4;
+    [SerializeField] private bool isPrivate;
+    [SerializeField] private GameSession sessionPrefab;
 
-    public void addPlayer(Player player)
+    public string LobbyCode => lobbyCode;
+    public Player Host => host;
+    public IReadOnlyList<Player> ConnectedPlayers => connectedPlayers;
+    public int MaxPlayers => maxPlayers;
+    public bool IsPrivate => isPrivate;
+
+    public void AddPlayer(Player player)
     {
-        connectedPlayers.Add(player);
+        if (player != null && connectedPlayers.Count < maxPlayers && !connectedPlayers.Contains(player))
+        {
+            connectedPlayers.Add(player);
+        }
     }
 
-    public void removePlayer(Player player)
+    public void RemovePlayer(Player player)
     {
         connectedPlayers.Remove(player);
     }
 
-    public GameSession createGameSession()
+    /// <summary>
+    /// Aplica o padrão GRASP Creator respeitando o ciclo de vida de MonoBehaviour do Unity.
+    /// </summary>
+    public GameSession CreateGameSession()
     {
-        GameSession newSession = new GameSession();
-        return newSession;
+        if (sessionPrefab != null)
+        {
+            return Instantiate(sessionPrefab);
+        }
+
+        GameSession existingSession = FindFirstObjectByType<GameSession>();
+        if (existingSession != null)
+        {
+            return existingSession;
+        }
+
+        GameObject sessionObj = new GameObject("GameSession");
+        return sessionObj.AddComponent<GameSession>();
     }
 
-    //modificado por qfaxas
-    public void setPlayerStatus(Player player, bool ready)//0 = disconnected, 1 = connected, 2 = connecting, 3 = waiting, 4 = ready;
+    public void SetPlayerStatus(Player player, bool ready)
     {
-        if (ready)
-        {
-            player.setConnectionStatus(4); // Set player status to ready
-        }
-        else
-        {
-            player.setConnectionStatus(3); // Set player status to waiting
-        }
+        if (player == null) return;
+        player.SetConnectionStatus(ready ? ConnectionStatus.Ready : ConnectionStatus.Waiting);
     }
+
+    // Métodos de compatibilidade com código legado
+    public void addPlayer(Player player) => AddPlayer(player);
+    public void removePlayer(Player player) => RemovePlayer(player);
+    public GameSession createGameSession() => CreateGameSession();
+    public void setPlayerStatus(Player player, bool ready) => SetPlayerStatus(player, ready);
 }
