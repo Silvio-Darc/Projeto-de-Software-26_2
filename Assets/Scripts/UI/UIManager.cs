@@ -12,10 +12,28 @@ public class UIManager : MonoBehaviour
     // Pilha que guarda o histórico de navegação
     private Stack<UIPanel> panelStack = new Stack<UIPanel>();
 
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetStaticData()
+    {
+        Instance = null;
+    }
+
     private void Awake()
     {
-        if (Instance == null) Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            AudioManager.EnsureExists();
+        }
         else Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
     }
 
     private void Start()
@@ -41,6 +59,7 @@ public class UIManager : MonoBehaviour
     // Abre um novo submenu (empilha)
     public void OpenPanel(UIPanel newPanel)
     {
+        AudioManager.Instance?.PlayButtonClick();
         if (panelStack.Count > 0)
         {
             panelStack.Peek().Close();
@@ -56,6 +75,7 @@ public class UIManager : MonoBehaviour
     // Volta para a tela anterior (desempilha)
     public void GoBack()
     {
+        AudioManager.Instance?.PlayButtonClick();
         if (panelStack.Count <= 1) return; // Não fecha o menu raiz
 
         UIPanel current = panelStack.Pop();

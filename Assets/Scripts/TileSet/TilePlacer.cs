@@ -201,6 +201,7 @@ public class TilePlacer : MonoBehaviour
         Matrix4x4 matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(0, 0, rotation * -90f), Vector3.one);
         tilemap.SetTransformMatrix(cellPosition, matrix);
         PlacedTile placed = board.RegisterPlacedTile(tileInstance, cellPosition, rotation);
+        AudioManager.Instance?.PlayTilePlaced();
 
         lastTileEstradaOcupada = board.RedeJaPossuiMeeple(cellPosition, TipoTerreno.Estrada);
         lastTileCidadeOcupada = board.RedeJaPossuiMeeple(cellPosition, TipoTerreno.Cidade);
@@ -286,6 +287,7 @@ public class TilePlacer : MonoBehaviour
         if (!Turn.Instance.ExecuteCommand(cmd))
         {
             Debug.Log("Movimento inválido: As peças não conectam");
+            AudioManager.Instance?.PlayInvalidMove();
         }
     }
 

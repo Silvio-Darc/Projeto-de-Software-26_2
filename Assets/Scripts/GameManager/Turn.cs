@@ -61,6 +61,12 @@ public class Turn : MonoBehaviour
     public event Action<IReadOnlyList<Player>> OnFinalScoringRequested;
     public event Action<IReadOnlyList<Player>> OnGameOver;
 
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetStaticData()
+    {
+        Instance = null;
+    }
+
     private void Awake()
     {
         if (Instance == null)
@@ -77,10 +83,20 @@ public class Turn : MonoBehaviour
             {
                 gameObject.AddComponent<BotController>();
             }
+
+            AudioManager.EnsureExists();
         }
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
         }
     }
 
@@ -247,6 +263,7 @@ public class Turn : MonoBehaviour
         Player current = GetCurrentPlayer();
         Debug.Log($"[Rodada {roundNumber}] Turno de: {current?.GetPlayerName() ?? $"Jogador {currentPlayerIndex + 1}"}");
         OnTurnChanged?.Invoke(current);
+        AudioManager.Instance?.PlayTurnChanged();
         TransitionToState(new DrawTileState());
     }
 

@@ -23,10 +23,25 @@ public class ConfigurarPartidaLocalPanel : UIPanel
 
     public IReadOnlyList<UIPlayer> ActivePlayers => activePlayers;
 
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetStaticData()
+    {
+        Instance = null;
+    }
+
     protected override void Awake()
     {
         base.Awake();
         Instance = this;
+        AudioManager.EnsureExists();
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
     }
 
     /// <summary>
@@ -56,6 +71,7 @@ public class ConfigurarPartidaLocalPanel : UIPanel
 
     public void AddPlayer()
     {
+        AudioManager.Instance?.PlayButtonClick();
         if (activePlayers.Count < MaxPlayers && playerPrefab != null)
         {
             UIPlayer newPlayer = Instantiate(playerPrefab, playersGroup, false);
@@ -67,6 +83,7 @@ public class ConfigurarPartidaLocalPanel : UIPanel
 
     public void AddBot()
     {
+        AudioManager.Instance?.PlayButtonClick();
         if (activePlayers.Count < MaxPlayers && botPrefab != null)
         {
             UIPlayer newBot = Instantiate(botPrefab, playersGroup, false);
@@ -78,6 +95,7 @@ public class ConfigurarPartidaLocalPanel : UIPanel
 
     public void RemovePlayer(UIPlayer playerToRemove)
     {
+        AudioManager.Instance?.PlayButtonClick();
         if (playerToRemove != null && activePlayers.Count > MinPlayers && activePlayers.Contains(playerToRemove))
         {
             ReleaseColor(playerToRemove.playerColor);
@@ -98,6 +116,7 @@ public class ConfigurarPartidaLocalPanel : UIPanel
 
     public void Jogar()
     {
+        AudioManager.Instance?.PlayButtonClick();
         // Garante no mínimo 2 participantes na partida local
         while (activePlayers.Count < MinPlayers)
         {

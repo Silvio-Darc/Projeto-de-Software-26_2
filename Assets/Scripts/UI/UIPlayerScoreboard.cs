@@ -19,12 +19,60 @@ public class UIPlayerScoreboard : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI gameOverStandingsText;
 
+    [Header("Opções In-Game")]
+    [SerializeField] private GameObject inGameOptionsModal;
+    [SerializeField] private Slider inGameMusicSlider;
+    [SerializeField] private Slider inGameSfxSlider;
+    [SerializeField] private TextMeshProUGUI inGameMusicPercentText;
+    [SerializeField] private TextMeshProUGUI inGameSfxPercentText;
+
     private Canvas hudCanvas;
     private RectTransform cardsContainer;
 
     private void OnDestroy()
     {
         UnbindTurnEvents();
+    }
+
+    private void Update()
+    {
+        if (UnityEngine.InputSystem.Keyboard.current != null && UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (gameOverPanel != null && gameOverPanel.activeSelf) return;
+            ToggleInGameOptions();
+        }
+    }
+
+    public void ToggleInGameOptions(bool? forceState = null)
+    {
+        if (inGameOptionsModal == null) return;
+
+        bool targetState = forceState.HasValue ? forceState.Value : !inGameOptionsModal.activeSelf;
+        inGameOptionsModal.SetActive(targetState);
+
+        if (targetState)
+        {
+            float musicVol = AudioManager.Instance != null ? AudioManager.Instance.MusicVolume : 0.5f;
+            float sfxVol = AudioManager.Instance != null ? AudioManager.Instance.SfxVolume : 1.0f;
+
+            if (inGameMusicSlider != null)
+            {
+                inGameMusicSlider.SetValueWithoutNotify(musicVol);
+            }
+            if (inGameMusicPercentText != null)
+            {
+                inGameMusicPercentText.text = $"{Mathf.RoundToInt(musicVol * 100f)}%";
+            }
+
+            if (inGameSfxSlider != null)
+            {
+                inGameSfxSlider.SetValueWithoutNotify(sfxVol);
+            }
+            if (inGameSfxPercentText != null)
+            {
+                inGameSfxPercentText.text = $"{Mathf.RoundToInt(sfxVol * 100f)}%";
+            }
+        }
     }
 
     public void InitializeScoreboard(IReadOnlyList<Player> players)
@@ -205,15 +253,6 @@ public class UIPlayerScoreboard : MonoBehaviour
         deckRect.offsetMin = Vector2.zero;
         deckRect.offsetMax = Vector2.zero;
 
-        Button menuBtn = CreateButton(topBar.transform, "MenuButton", "Menu", new Color(0.25f, 0.28f, 0.35f, 1f), () =>
-        {
-            SceneManager.LoadScene(MatchConfig.MenuSceneName);
-        });
-        RectTransform menuBtnRect = menuBtn.GetComponent<RectTransform>();
-        menuBtnRect.anchorMin = new Vector2(0.89f, 0.12f);
-        menuBtnRect.anchorMax = new Vector2(0.985f, 0.88f);
-        menuBtnRect.offsetMin = Vector2.zero;
-        menuBtnRect.offsetMax = Vector2.zero;
 
         // 2. Coluna Esquerda com os Cartões de Jogadores
         GameObject cardsHolder = new GameObject("PlayerCardsContainer", typeof(RectTransform));
@@ -293,6 +332,123 @@ public class UIPlayerScoreboard : MonoBehaviour
         backRect.offsetMax = Vector2.zero;
 
         gameOverPanel.SetActive(false);
+
+        // 5. Botão "⚙ Opções (Esc)" no canto superior direito
+        Button inGameOptionsBtn = CreateButton(canvasObj.transform, "InGameOptionsBtn", "⚙ Opções (Esc)",
+            new Color(0.20f, 0.25f, 0.35f, 0.90f), () =>
+            {
+                ToggleInGameOptions();
+            });
+        RectTransform optRect = inGameOptionsBtn.GetComponent<RectTransform>();
+        optRect.anchorMin = new Vector2(1f, 1f);
+        optRect.anchorMax = new Vector2(1f, 1f);
+        optRect.pivot = new Vector2(1f, 1f);
+        optRect.anchoredPosition = new Vector2(-20f, -18f);
+        optRect.sizeDelta = new Vector2(160f, 42f);
+
+        // 6. Painel Modal de Opções de Áudio In-Game
+        ConstructInGameOptionsModal(canvasObj);
+    }
+
+    private void ConstructInGameOptionsModal(GameObject canvasObj)
+    {
+        inGameOptionsModal = CreatePanel(canvasObj.transform, "InGameOptionsModal",
+            Vector2.zero, Vector2.one, new Vector2(0.5f, 0.5f),
+            Vector2.zero, Vector2.zero, new Color(0.03f, 0.04f, 0.07f, 0.88f));
+
+        GameObject card = CreatePanel(inGameOptionsModal.transform, "OptionsCard",
+            new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
+            Vector2.zero, new Vector2(620f, 420f), new Color(0.12f, 0.15f, 0.22f, 0.98f));
+
+        Outline cardOutline = card.AddComponent<Outline>();
+        cardOutline.effectColor = new Color(0.22f, 0.72f, 0.81f, 0.9f);
+        cardOutline.effectDistance = new Vector2(2f, -2f);
+
+        TextMeshProUGUI titleTxt = CreateText(card.transform, "TitleText", "CONFIGURAÇÕES DE ÁUDIO", 24, TextAlignmentOptions.Center);
+        RectTransform titleRect = titleTxt.GetComponent<RectTransform>();
+        titleRect.anchorMin = new Vector2(0.06f, 0.82f);
+        titleRect.anchorMax = new Vector2(0.94f, 0.96f);
+        titleRect.offsetMin = Vector2.zero;
+        titleRect.offsetMax = Vector2.zero;
+
+        // Seção Música
+        TextMeshProUGUI musicLabel = CreateText(card.transform, "MusicLabel", "Música de Fundo", 20, TextAlignmentOptions.MidlineLeft);
+        RectTransform musicLabelRect = musicLabel.GetComponent<RectTransform>();
+        musicLabelRect.anchorMin = new Vector2(0.08f, 0.64f);
+        musicLabelRect.anchorMax = new Vector2(0.68f, 0.76f);
+        musicLabelRect.offsetMin = Vector2.zero;
+        musicLabelRect.offsetMax = Vector2.zero;
+
+        float currentMusicVol = AudioManager.Instance != null ? AudioManager.Instance.MusicVolume : 0.5f;
+        inGameMusicPercentText = CreateText(card.transform, "MusicPercent", $"{Mathf.RoundToInt(currentMusicVol * 100f)}%", 20, TextAlignmentOptions.MidlineRight);
+        RectTransform musicPercentRect = inGameMusicPercentText.GetComponent<RectTransform>();
+        musicPercentRect.anchorMin = new Vector2(0.70f, 0.64f);
+        musicPercentRect.anchorMax = new Vector2(0.92f, 0.76f);
+        musicPercentRect.offsetMin = Vector2.zero;
+        musicPercentRect.offsetMax = Vector2.zero;
+
+        inGameMusicSlider = CreateSlider(card.transform, "MusicSlider", 0f, 1f, currentMusicVol, (val) =>
+        {
+            if (AudioManager.Instance != null) AudioManager.Instance.SetMusicVolume(val);
+            if (inGameMusicPercentText != null) inGameMusicPercentText.text = $"{Mathf.RoundToInt(val * 100f)}%";
+        });
+        RectTransform musicSliderRect = inGameMusicSlider.GetComponent<RectTransform>();
+        musicSliderRect.anchorMin = new Vector2(0.08f, 0.52f);
+        musicSliderRect.anchorMax = new Vector2(0.92f, 0.62f);
+        musicSliderRect.offsetMin = Vector2.zero;
+        musicSliderRect.offsetMax = Vector2.zero;
+
+        // Seção SFX
+        TextMeshProUGUI sfxLabel = CreateText(card.transform, "SFXLabel", "Efeitos Sonoros (SFX / UI)", 20, TextAlignmentOptions.MidlineLeft);
+        RectTransform sfxLabelRect = sfxLabel.GetComponent<RectTransform>();
+        sfxLabelRect.anchorMin = new Vector2(0.08f, 0.36f);
+        sfxLabelRect.anchorMax = new Vector2(0.68f, 0.48f);
+        sfxLabelRect.offsetMin = Vector2.zero;
+        sfxLabelRect.offsetMax = Vector2.zero;
+
+        float currentSfxVol = AudioManager.Instance != null ? AudioManager.Instance.SfxVolume : 1.0f;
+        inGameSfxPercentText = CreateText(card.transform, "SFXPercent", $"{Mathf.RoundToInt(currentSfxVol * 100f)}%", 20, TextAlignmentOptions.MidlineRight);
+        RectTransform sfxPercentRect = inGameSfxPercentText.GetComponent<RectTransform>();
+        sfxPercentRect.anchorMin = new Vector2(0.70f, 0.36f);
+        sfxPercentRect.anchorMax = new Vector2(0.92f, 0.48f);
+        sfxPercentRect.offsetMin = Vector2.zero;
+        sfxPercentRect.offsetMax = Vector2.zero;
+
+        inGameSfxSlider = CreateSlider(card.transform, "SFXSlider", 0f, 1f, currentSfxVol, (val) =>
+        {
+            if (AudioManager.Instance != null) AudioManager.Instance.SetSfxVolume(val);
+            if (inGameSfxPercentText != null) inGameSfxPercentText.text = $"{Mathf.RoundToInt(val * 100f)}%";
+        });
+        RectTransform sfxSliderRect = inGameSfxSlider.GetComponent<RectTransform>();
+        sfxSliderRect.anchorMin = new Vector2(0.08f, 0.24f);
+        sfxSliderRect.anchorMax = new Vector2(0.92f, 0.34f);
+        sfxSliderRect.offsetMin = Vector2.zero;
+        sfxSliderRect.offsetMax = Vector2.zero;
+
+        // Botões Fechar / Menu
+        Button resumeBtn = CreateButton(card.transform, "ResumeBtn", "Continuar",
+            new Color(0.20f, 0.65f, 0.32f, 1f), () =>
+            {
+                ToggleInGameOptions(false);
+            });
+        RectTransform resumeRect = resumeBtn.GetComponent<RectTransform>();
+        resumeRect.anchorMin = new Vector2(0.10f, 0.06f);
+        resumeRect.anchorMax = new Vector2(0.48f, 0.17f);
+        resumeRect.offsetMin = Vector2.zero;
+        resumeRect.offsetMax = Vector2.zero;
+
+        Button menuBtn = CreateButton(card.transform, "MenuBtn", "Voltar ao Menu",
+            new Color(0.26f, 0.32f, 0.45f, 1f), () =>
+            {
+                SceneManager.LoadScene(MatchConfig.MenuSceneName);
+            });
+        RectTransform menuRect = menuBtn.GetComponent<RectTransform>();
+        menuRect.anchorMin = new Vector2(0.52f, 0.06f);
+        menuRect.anchorMax = new Vector2(0.90f, 0.17f);
+        menuRect.offsetMin = Vector2.zero;
+        menuRect.offsetMax = Vector2.zero;
+
+        inGameOptionsModal.SetActive(false);
     }
 
     private UIPlayerInfo CreatePlayerCard(Player targetPlayer)
@@ -393,6 +549,7 @@ public class UIPlayerScoreboard : MonoBehaviour
         img.color = bgColor;
 
         Button btn = btnObj.GetComponent<Button>();
+        btn.onClick.AddListener(() => AudioManager.Instance?.PlayButtonClick());
         if (onClick != null)
         {
             btn.onClick.AddListener(onClick);
@@ -407,5 +564,31 @@ public class UIPlayerScoreboard : MonoBehaviour
         txtRect.offsetMax = Vector2.zero;
 
         return btn;
+    }
+
+    private static Slider CreateSlider(
+        Transform parent,
+        string name,
+        float minValue,
+        float maxValue,
+        float initialValue,
+        UnityEngine.Events.UnityAction<float> onValueChanged)
+    {
+        DefaultControls.Resources res = new DefaultControls.Resources();
+        GameObject sliderObj = DefaultControls.CreateSlider(res);
+        sliderObj.name = name;
+        sliderObj.transform.SetParent(parent, false);
+
+        Slider slider = sliderObj.GetComponent<Slider>();
+        slider.minValue = minValue;
+        slider.maxValue = maxValue;
+        slider.value = initialValue;
+
+        if (onValueChanged != null)
+        {
+            slider.onValueChanged.AddListener(onValueChanged);
+        }
+
+        return slider;
     }
 }

@@ -15,6 +15,11 @@ public class GameSession : MonoBehaviour
 
     public IReadOnlyList<Player> ActivePlayers => activePlayers;
 
+    private void Awake()
+    {
+        AudioManager.EnsureExists();
+    }
+
     private void Start()
     {
         SetupPlayers(GameConfig.SelectedPlayerCount);

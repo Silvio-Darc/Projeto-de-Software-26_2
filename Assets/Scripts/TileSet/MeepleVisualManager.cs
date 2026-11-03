@@ -153,7 +153,22 @@ public class MeepleVisualManager : MonoBehaviour
         if (canClickPins && hoveredPin != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             int chosenFeatureId = hoveredPin.Feature.LocalFeatureId;
-            turnManager.ExecuteCommand(new PlaceMeepleCommand(chosenFeatureId));
+            bool success = turnManager.ExecuteCommand(new PlaceMeepleCommand(chosenFeatureId));
+            if (!success)
+            {
+                AudioManager.Instance?.PlayInvalidMove();
+            }
+        }
+        else if (canClickPins && hoveredPin == null && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            if (activePins.Count > 0)
+            {
+                Vector3 firstPinPos = activePins[0].WorldPosition;
+                if (Vector2.Distance(new Vector2(mouseWorld.x, mouseWorld.y), new Vector2(firstPinPos.x, firstPinPos.y)) < 0.9f)
+                {
+                    AudioManager.Instance?.PlayInvalidMove();
+                }
+            }
         }
     }
 
